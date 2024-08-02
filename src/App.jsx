@@ -20,7 +20,7 @@ function App() {
         <Route path="/horizon" element={<Horizon />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/sponsors" element={<Sponsors />} />
-        <Route path="/team" element={<Team />} />
+        <Route path="/teams" element={<Team />} />
       </Routes>
       <Footer />
     </>
