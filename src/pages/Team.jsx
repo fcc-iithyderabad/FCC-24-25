@@ -174,45 +174,45 @@ function Team() {
       <h2 className="text-3xl font-bold text-center mb-8 mt-20">Overall Coordinators</h2>
 
       <div className="flex flex-row justify-evenly items-center mb-20">
-        
-      <div className="flex flex-col items-center mb-8">
-        <div
-          className="flex flex-col items-center p-6"
-          style={{
-            backgroundColor: "#153556",
-            borderRadius: "12px",
-            width: "264px",
-            height: "319px",
-          }}
+
+        <div className="flex flex-col items-center mb-8">
+          <div
+            className="flex flex-col items-center p-6"
+            style={{
+              backgroundColor: "#153556",
+              borderRadius: "12px",
+              width: "264px",
+              height: "319px",
+            }}
           >
-          <img
-            src="src/assets/team/1.jpeg"
-            alt="overall head"
-            className="w-45 h-45 rounded-full object-cover mb-2"
-            style={{ height: "180px", width: "180px", objectFit: "cover" }}
+            <img
+              src="src/assets/team/1.jpeg"
+              alt="overall head"
+              className="w-45 h-45 rounded-full object-cover mb-2"
+              style={{ height: "180px", width: "180px", objectFit: "cover" }}
             />
-          <h2 className="text-xl font-semibold text-white">oc1</h2>
+            <h2 className="text-xl font-semibold text-white">Aryan</h2>
+          </div>
         </div>
-      </div>
-      <div className="flex flex-col items-center mb-8">
-        <div
-          className="flex flex-col items-center p-6"
-          style={{
-            backgroundColor: "#153556",
-            borderRadius: "12px",
-            width: "264px",
-            height: "319px",
-          }}
+        <div className="flex flex-col items-center mb-8">
+          <div
+            className="flex flex-col items-center p-6"
+            style={{
+              backgroundColor: "#153556",
+              borderRadius: "12px",
+              width: "264px",
+              height: "319px",
+            }}
           >
-          <img
-            src="src/assets/team/2.jpg"
-            alt="overall head"
-            className="w-45 h-45 rounded-full object-cover mb-2"
-            style={{ height: "180px", width: "180px", objectFit: "cover" }}
+            <img
+              src="src/assets/team/2.jpg"
+              alt="overall head"
+              className="w-45 h-45 rounded-full object-cover mb-2"
+              style={{ height: "180px", width: "180px", objectFit: "cover" }}
             />
-          <h2 className="text-xl font-semibold text-white">oc2</h2>
+            <h2 className="text-xl font-semibold text-white">Omkar</h2>
+          </div>
         </div>
-      </div>
       </div>
       <TeamPic
         title="Consulting Team"
@@ -235,14 +235,14 @@ function Team() {
         coordinators={opraCoords}
       />
       <TeamPic
+        title="Web Team"
+        head={webHead}
+        coordinators={webCoords}
+      />
+      <TeamPic
         title="Public Relations Team"
         head={prHead}
         coordinators={prCoords}
-      />
-      <TeamPic
-        title="Web Development Team"
-        head={webHead}
-        coordinators={webCoords}
       />
     </div>
   );
