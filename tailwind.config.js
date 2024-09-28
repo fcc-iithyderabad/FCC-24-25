@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */ 
 export default {
   content: [
     "./index.html",
@@ -23,6 +23,15 @@ export default {
       },
       backgroundImage:{
         'custom-grad-1':'linear-gradient(to bottom,rgba(15, 70, 147, 0.9),rgba(15, 72, 147, 0.6))',
+      },
+      blur:{
+        'blur-250' : '250px',
+      },
+      fontFamily:{
+        montserrat: ['Montserrat', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+        rosario: ['Rosario', 'sans-serif'],
+        poppins: ['Poppins' , "sans-serif"],
         'horizonText':'linear-gradient(124deg, #1680e8 2%, #2bc9d3 133.32%)',
       },
       fontFamily: {
@@ -63,6 +72,13 @@ export default {
         'vh-50' : '50vh',
         'vh-60' : '60vh',
       },
+      rotate:{
+        '20-deg' : '20deg',
+        '60-deg' : '60deg',
+      },
+      zIndex:{
+        'one' : '1',
+      },
       lineHeight: {
         normal: 'normal',
         '100p': '100%',
@@ -86,4 +102,3 @@ export default {
   },
   plugins: [],
 }
-
