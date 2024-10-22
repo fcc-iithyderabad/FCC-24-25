@@ -1,3 +1,8 @@
+import grp31 from "/src/assets/Group_31.svg"
+import msg201SVG from "/src/assets/home/messgae_1.svg"
+import logo from '../assets/fcc-white.svg'
+
+
 function Footer() {
   return (
     <div className="footer m-auto font-ikaros relative overflow-hidden container-fluid  " id="footer">
@@ -6,13 +11,13 @@ function Footer() {
       <footer className="flex flex-wrap pt-[4%] px-[4%] pb-[2%]" style={{backgroundColor: "rgb(15, 70, 144)"}}>
         <div className="w-full md:w-1/5 flex-col flex justify-between py-7">
           <a href="index.html" className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-            <img src="src/assets/Group_31.svg" width="60%" height="60%" alt=""/>
+            <img src={logo} className="w-20 h-20 md:w-28 md:h-28" alt=""/>
           </a>
           <p className="">© 2024 Copyright: FCC IIT Hyderabad</p>
         </div>
-        <div className="w-full md:w-1/5 flex-col flex justify-between gap-3">
-          <h3 className="text-[4vh] md:text-[1.5vw]">About Us</h3>
-          <ul className="flex flex-col gap-1">
+        <div className="w-1/2 md:w-1/5 flex-col flex justify-between gap-3 md-1:hidden ">
+          <h3 className="text-[1.5rem] md:text-[1.5vw]">About Us</h3>
+          <ul className="flex flex-col gap-1 text-[1rem]">
             <li className="nav-item mb-2"><a href="pages/Comingsoon.html" className="nav-link p-0 text-body-light"
                                          target="_blank">FCC Leadership</a></li>
             <li className="nav-item mb-2"><a href="pages/Comingsoon.html" className="nav-link p-0 text-body-light"
@@ -25,9 +30,9 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="w-full md:w-1/5 flex-col flex justify-between gap-3">
-          <h3 className="text-[4vh] md:text-[1.5vw]">Useful Links</h3>
-          <ul className="flex flex-col gap-1">
+        <div className="w-1/2 md:w-1/5 flex-col flex justify-between gap-3">
+          <h3 className="text-[1.5rem] md:text-[1.5vw]">Useful Links</h3>
+          <ul className="flex flex-col gap-1 text-[1rem]">
             <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-light">Home</a></li>
             <li className="nav-item mb-2"><a href="pages/Horizon.html" className="nav-link p-0 text-body-light"
                                          target="_blank">Horizon</a></li>
@@ -39,9 +44,9 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="w-full md:w-1/5 flex-col flex justify-between gap-3">
-          <h3 className="text-[4vh] md:text-[1.5vw]">Socials</h3>
-          <ul className="flex flex-col gap-1">
+        <div className="w-1/2 md:w-1/5 flex-col flex justify-between gap-3 md-1:hidden ">
+          <h3 className="text-[1.5rem] md:text-[1.5vw]">Socials</h3>
+          <ul className="flex flex-col gap-1 text-[1rem]">
             <li className="nav-item mb-2"><a href="https://www.instagram.com/fcc_iith/" className="nav-link p-0 text-body-light"
                                          target="_blank">Instagram</a></li>
             <li className="nav-item mb-2"><a href="https://www.linkedin.com/company/fcc-iith/"
@@ -53,20 +58,23 @@ function Footer() {
             <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-light"></a></li>
           </ul>
         </div>
-        <div className="w-full md:w-1/5 flex-col flex justify-between gap-3">
-          <h3 className="text-[4vh] md:text-[1.5vw]">Contact</h3>
-          <ul className="flex flex-col gap-1">
+        <div className="w-1/2 md:w-1/5 flex-col flex justify-between gap-3">
+          <h3 className="text-[1.5rem] md:text-[1.5vw]">Contact</h3>
+          <ul className="flex flex-col gap-1 text-[1rem]">
             <li className="nav-item mb-2"><p className="nav-link p-0 text-white" >IIT Hyderabad, Sangareddy,
               Telangana, India - 502285</p></li>
             <li className="nav-item mb-2">
               <a href="https://google.com" className="nav-link p-0 text-body-light flex items-center">
-                <img src="src/assets/home/messgae%201.svg" alt=""/>&nbsp;
+                <img src={msg201SVG} alt=""/>&nbsp;
                 fcc@gymkhana.iith.ac.in
               </a>
             </li>
-            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-light"></a></li>
-            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-light"></a></li>
-            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-light"></a></li>
+            <li className="nav-item mb-2
+            "><a href="#" className="nav-link p-0 text-body-light"></a></li>
+            <li className="nav-item mb-2
+            "><a href="#" className="nav-link p-0 text-body-light"></a></li>
+            <li className="nav-item mb-2
+            "><a href="#" className="nav-link p-0 text-body-light"></a></li>
           </ul>
         </div>
       </footer>
