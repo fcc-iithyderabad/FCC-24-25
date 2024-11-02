@@ -11,9 +11,12 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
+    "axios": "^1.7.7",
+    "fcc-24-25": "file:",
     "gsap": "^3.12.5",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
+    "react-calendar": "^5.0.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",
     "react-multi-carousel": "^2.8.5",
