@@ -10,7 +10,7 @@ function YearTile({year, setYearChange }) {
   return (
     <div>
       <button className='bg-custom-bg2 text-white
-        w-auto py-3 px-7 rounded-full flex justify-center items-center font-medium text-2xl'
+        w-auto p-3 md:py-3 md:px-7 rounded-md flex justify-center items-center font-medium text-xl md:text-2xl'
               onClick={changeYear} value={year}>
         {year}
       </button>
