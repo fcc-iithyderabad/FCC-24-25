@@ -1,19 +1,18 @@
-import {useLocation} from "react-router-dom";
-import {useRef, useState} from "react";
-import {useGSAP} from "@gsap/react";
-
+import { useLocation } from "react-router-dom";
+import { useRef, useState, useEffect } from "react";
+import { useGSAP } from "@gsap/react";
+import { Link } from "react-router-dom";
 import gsap from "gsap";
 
-// import logo from '../assets/fcc-logo-white.png'
-import logo from '../assets/fcc-white.svg'
-import { Link } from "react-router-dom";
+import closeIcon from '@/assets/home/closeIcon.svg'
+import logofull from '../assets/fcc-logo-full.png'
 
 function Navbar() {
 
   const location = useLocation()
-
   const menuRef = useRef(null);
   const [open, changeState] = useState(false);
+
 
   useGSAP(() => {
     if (open === false) {
@@ -35,35 +34,32 @@ function Navbar() {
 
 
   return (
-    <div className="container-fluid header flex font-semibold justify-center p-10">
-      <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-gradient-to-r from-blue-600 to-blue-900 rounded-[300px] p-3 shadow-[0_0_12px_rgba(69,115,213,0.6)] ">
-      {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-[#205398] rounded-[300px] p-3"> */}
-      {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-[#0E3E81] rounded-[300px] p-2"> */}
-      {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-transparent rounded-[300px] p-2"> */}
+    <div className="relative container-fluid header flex justify-center  z-[100]   ">
 
-
-        <div className='pl-4'>
+      <header className="flex w-full bg-opacity-35 h-auto overflow-hidden items-center justify-between py-5 px-10  bg-transparent mb-10  shadow-sm shadow-slate-700 "
+      >
+        <div className='md:pl-4 md:w-[40%] '>
           <Link to='/'
-             className='inline-flex link-body-emphasis text-decoration-none items-center justify-evenly'>
-            <img src={logo} alt='FCC' width='35' height='35'/>
+            className='inline-flex link-body-emphasis text-decoration-none items-center justify-evenly w-1/2 md:w-1/3'>
+            <img src={logofull} alt='FCC' />
           </Link>
         </div>
 
-        <ul className=' navlinks w-[50%] text-xl hidden lg:flex justify-between items-center pr-5'>
-          <li><a href='/'
-                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/' ? ' border-solid border-2 rounded-[300px]' : '')}>Home</a>
+        <ul className=' navlinks w-[50%] text-md hidden lg:flex justify-between items-center pr-5'>
+          <li><Link to='/'
+            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/' ? ' border-solid border-[#21A1F2] border-2 rounded-md text-[#21A1F2] ' : '')}>Home</Link>
           </li>
-          <li><a href='/horizon'
-                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/horizon' ? ' border-solid border-2 rounded-[300px]' : '')}>Horizon</a>
+          <li><Link to='/horizon'
+            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/horizon' ? ' border-solid border-[#21A1F2] border-2 rounded-md text-[#21A1F2] ' : '')}>Horizon</Link>
           </li>
-          <li><a href=''
-                 className={'nav-link fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/events' ? ' border-solid border-2 rounded-[300px]' : '')}>Events</a>
+          <li><Link to='/schedule'
+            className={'nav-link fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/schedule' ? ' border-solid border-[#21A1F2] border-2 rounded-md text-[#21A1F2] ' : '')}>Events</Link>
           </li>
-          <li><a href=''
-                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/resources' ? ' border-solid border-2 rounded-[300px]' : '')}>Resources</a>
+          <li><Link to='/resources'
+            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/resources' ? ' border-solid border-[#21A1F2] border-2 rounded-md text-[#21A1F2] ' : '')}>Resources</Link>
           </li>
-          <li><a href=''
-                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/teams' ? ' border-solid border-2 rounded-[300px]' : '')}>Team</a>
+          <li><Link to='/team'
+            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/team' ? ' border-solid border-[#21A1F2] border-2 rounded-md text-[#21A1F2] ' : '')}>Team</Link>
           </li>
         </ul>
 
@@ -71,35 +67,61 @@ function Navbar() {
         <button className='btn btn-primary lg:hidden' type='button' onClick={() => {
           changeState(true);
         }}>
-          <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' className='bi bi-list'
-               viewBox='0 0 16 16'>
+          <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='currentColor' className='bi bi-list'
+            viewBox='0 0 16 16'>
             <path fillRule='evenodd'
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
           </svg>
         </button>
 
-        <div className="fixed top-0 w-screen h-screen bg-black z-10 lg:hidden flex flex-col overflow-hidden left-[100%]"
-             ref={menuRef}>
-          <div className="flex justify-end bg-transparent w-full h-[20%] items-center p-[5%] cursor-pointer"
-               onClick={() => {
-                 changeState(false)
-               }}>
-            <div>X</div>
+        <div className="fixed top-0 w-screen h-screen bg-black z-[120] lg:hidden justify-center flex flex-col overflow-hidden left-[100%]"
+          ref={menuRef}>
+
+          <div className="fixed top-0 flex justify-end bg-transparent w-full items-center px-[15%] pt-[10%] cursor-pointer text-4xl mr-[2rem] ">
+            <div
+              onClick={() => {
+                changeState(false)
+              }}
+            >
+              <img src={closeIcon} alt="" />
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-between w-full h-[80%]  p-[10%] links ">
-            <a href="/"
-               className={"text-5xl font-montserrat font-light" + (location.pathname === "/" ? " text-blue-300" : " text-white hover:text-blue-300")}>Home</a>
-            <a href="/horizon"
-               className={"text-5xl font-montserrat font-light" + (location.pathname === "/horizon" ? " text-blue-300" : " text-white hover:text-blue-300")}>Horizon</a>
-            <a href=""
-               className={"text-5xl font-montserrat font-light" + (location.pathname === "/events" ? " text-blue-300" : " text-white hover:text-blue-300")}>Events</a>
-            <a href=""
-               className={"text-5xl font-montserrat font-light" + (location.pathname === "/resources" ? " text-blue-300" : " text-white hover:text-blue-300")}>Resources</a>
-            <a href=""
-               className={"text-5xl font-montserrat font-light" + (location.pathname === "/team" ? " text-blue-300" : " text-white hover:text-blue-300")}>Team</a>
+
+          <div className="flex flex-col items-center justify-center gap-10 w-full h-[60%]  p-[10%] links ">
+            <Link to="/"
+              className={"text-3xl" + (location.pathname === "/" ? " text-blue-300" : " text-white hover:text-blue-300")}
+              onClick={() => {
+                changeState(false)
+              }}
+            >Home</Link>
+            <Link to="/horizon"
+              className={"text-3xl" + (location.pathname === "/horizon" ? " text-blue-300" : " text-white hover:text-blue-300")}
+              onClick={() => {
+                changeState(false)
+              }}
+            >Horizon</Link>
+            <Link to="/schedule"
+              className={"text-3xl" + (location.pathname === "/schedule" ? " text-blue-300" : " text-white hover:text-blue-300")}
+              onClick={() => {
+                changeState(false)
+              }}
+            >Events</Link>
+            <Link to="/resources"
+              className={"text-3xl" + (location.pathname === "/resources" ? " text-blue-300" : " text-white hover:text-blue-300")}
+              onClick={() => {
+                changeState(false)
+              }}
+            >Resources</Link>
+            <Link to="/team"
+              className={"text-3xl" + (location.pathname === "/team" ? " text-blue-300" : " text-white hover:text-blue-300")}
+              onClick={() => {
+                changeState(false)
+              }}
+            >Team</Link>
           </div>
         </div>
       </header>
+      
     </div>
   )
 }
