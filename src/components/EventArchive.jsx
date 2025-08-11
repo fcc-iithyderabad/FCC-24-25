@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-
-const eventsData = {
+import eventsData from '../assets/data/events/eventsData';
+const events_data = {
   2025: {
     title: 'Events 2025',
     events: [
@@ -71,6 +71,8 @@ const eventsData = {
     ]
   },
 };
+
+
 
 const years = [2021, 2022, 2023, 2024, 2025];
 

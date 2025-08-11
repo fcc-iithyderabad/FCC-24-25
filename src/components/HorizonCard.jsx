@@ -1,3 +1,4 @@
+import star from "../assets/star.svg"
 const HorizonCard = () => {
 
     return(
@@ -11,7 +12,7 @@ const HorizonCard = () => {
 
     <h2 className="flex items-center gap-x-3 text-4xl md:text-5xl font-schibsted font-bold bg-gradient-to-r from-[#81BD01] via-[#F3FFD8] to-[#D9FE8B] bg-clip-text text-transparent text-lime-400 mb-4">
         Horizon 2026
-        <img src="src/assets/star.svg" alt="icon" className="w-12 h-12" />
+        <img src = {star} alt="icon" className="w-12 h-12" />
     </h2>
 
     <p className="max-w-3xl font-outfit font text-Body-1-fontSize md:text-2xl text-gray-300 mb-8">
