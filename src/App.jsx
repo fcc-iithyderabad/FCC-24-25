@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Horizon from "./pages/Horizon";
-import Events from "./pages/Events"
 import Schedule from "./pages/Schedule";
 import AboutUs from "./pages/AboutUs";
 import Resources from "./pages/Resources";
@@ -10,7 +9,6 @@ import Finance from "./pages/resources-pages/Finance";
 import Consulting from "./pages/resources-pages/Consulting";
 import ProdMan from "./pages/resources-pages/ProdMan";
 import Projects from "./pages/Projects";
-import PortfolioOptimizer from "./pages/PortfolioOptimizer";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -27,10 +25,16 @@ function App() {
   // Items for Navbar
 const items = [
   { label: "Home", href: "/" },
-  { label: "Events", href: "/events" },
+  { label: "Events", href: "#" },
   { label: "Projects", href: "/projects" },
-  { label: "Blogs", href: "#" },
-  { label: "About Us", href: "/aboutus" },
+  { 
+    label: "Resources",
+    href: "/resources",
+    subItems: [
+      { label: "Resources", href: "/resources" },
+      { label: "Blogs", href: "#" },
+    ]
+  },  { label: "About Us", href: "/aboutus" },
 ];
 
   return (
@@ -51,9 +55,7 @@ const items = [
         <Route exact path="/" element={<Home />} />
         <Route path="/horizon" element={<Horizon />} />
         <Route path="/horizon/schedule" element={<HorizonTimeline />} />
-        <Route path="/events" element={<Events />}/>
         <Route path="/projects" element={<Projects/>}/>
-        <Route path="/projects/portfolio-optimizer" element={<PortfolioOptimizer />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/resources" element={<Resources />} />
