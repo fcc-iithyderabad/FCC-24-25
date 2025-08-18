@@ -61,7 +61,7 @@ function ProjectDetails(props) {
         <p className="font-Family-secondary text-base sm:text-[20px] leading-relaxed sm:leading-[32px] font-light">{props.overview}</p>
       </div>
       {/* Responsive Image */}
-      <img src={props.image} alt="overview image" className="w-full max-w-full h-auto rounded-lg" />
+      <img src={props.image} alt="overview image" className={`${props.smallImage?'w-3/4':'w-full'} max-w-full h-auto rounded-lg`} />
 
       {/* Key Challenges */}
       <div id="key challenges container" className="flex flex-col gap-4 sm:gap-[32px]">

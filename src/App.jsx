@@ -11,6 +11,8 @@ import Consulting from "./pages/resources-pages/Consulting";
 import ProdMan from "./pages/resources-pages/ProdMan";
 import Projects from "./pages/Projects";
 import PortfolioOptimizer from "./pages/PortfolioOptimizer";
+import SellSide from "./pages/SellSide_m_and_a";
+import Tradepro from "./pages/Tradepro";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -22,6 +24,7 @@ import rupeeBlur from "/src/assets/home/rupeeblur.svg";
 import BackToTop from "./components/BackToTop";
 import HorizonTimeline from "./components/horizon/HorizonTimeline";
 import HorizonPartners from "./components/horizon/HorizonPartners";
+import HdfcMerger from "./pages/HdfcMerger";
 
 function App() {
   // Items for Navbar
@@ -54,6 +57,9 @@ const items = [
         <Route path="/events" element={<Events />}/>
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/projects/portfolio-optimizer" element={<PortfolioOptimizer />} />
+        <Route path="/projects/sell-side-m-and-a" element={<SellSide />} />
+        <Route path="/projects/trade-pro" element={<Tradepro />} />
+        <Route path="/projects/hdfc-merger" element={<HdfcMerger/>}/>
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/resources" element={<Resources />} />

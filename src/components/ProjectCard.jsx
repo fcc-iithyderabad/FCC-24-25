@@ -16,6 +16,9 @@ function ProjectCard(props) {
         if(props.link){
             window.open(props.link, "_blank");
         }
+        else if(props.staticPage){
+            navigate(props.staticPage)
+        }
     }
 
     return (
