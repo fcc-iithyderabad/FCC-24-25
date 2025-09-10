@@ -10,7 +10,7 @@ const DynamicTitle = () => {
   const [showSecondLine, setShowSecondLine] = useState(false);
 
   // The words for the second line that will cycle
-  const wordsForSecondLine = ["Finance Practice", "Quant Finance", "Consulting"];
+  const wordsForSecondLine = ["Management Consulting", "Product Managament", "Quantitative Finance", "Personal Finance","Investing" ];
 
   useEffect(() => {
     // --- Animation for the first line: "Learn,Build,Excel in" ---
