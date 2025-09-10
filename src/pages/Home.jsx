@@ -15,10 +15,6 @@ function Home() {
       <hr className="mt-10 w-full opacity-10 mx-auto " />
       <HomeCarousel />
 
-      {/* Newsletter subscriptions  */}
-      <hr className="mt-10 w-full opacity-10 mx-auto " />
-      <HomeProjects />
-
       {/* Insta embed */}
       <hr className="mb-10 w-full opacity-10 mx-auto " />
       <HomeArticles />
