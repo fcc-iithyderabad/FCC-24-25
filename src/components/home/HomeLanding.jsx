@@ -21,15 +21,16 @@ const HomeLanding = () => {
                     </p>
                     {/* Buttons */}
                     <div className="flex flex-wrap gap-5"> {/* Added flex-wrap for button responsiveness */}
-                        <button className="flex items-center gap-2 bg-[#4E56D3] hover:bg-blue-500 text-white font-semibold font-outfit text-Body-2-fontSize px-6 py-3 rounded-md transition duration-300">
+                        <button className="flex items-center gap-2 bg-[#4E56D3] text-white font-semibold font-outfit text-Body-2-fontSize px-6 py-3 rounded-md transition duration-300">
                             Collaborate
                             <span className="text-white">→</span>
                         </button>
-
-                        <button className="flex items-center gap-2 bg-[#CDFE64] hover:bg-blue-500 text-[#1F2E01] font-semibold font-outfit text-Body-2-fontSize px-6 py-3 rounded-md transition duration-300">
-                            Explore Horizon2025
-                            <span className="text-[#1F2E01]">→</span>
-                        </button>
+                        <a href="/events">
+                            <button className="flex items-center gap-2 bg-[#CDFE64] hover:bg-blue-500 text-[#1F2E01] font-semibold font-outfit text-Body-2-fontSize px-6 py-3 rounded-md transition duration-300">
+                                Explore Horizon 2025
+                                <span className="text-[#1F2E01]">→</span>
+                            </button>
+                        </a>   
                     </div>
                 </div>
                 {/* Right Section: HorizonCard */}
