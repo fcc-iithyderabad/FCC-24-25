@@ -7,7 +7,7 @@ const events_data = {
       {
         id: 'first-speaker',
         name: 'First Speaker',
-        about: 'Lorem ipsum duis pellentesque amet ut imperdiet lorem et commodo a nulla diam. Lorem ipsum duis pellentesque amet ut imperdiet lorem et commodo a nulla diam. Lorem ipsum duis pellentesque amet ut imperdiet lorem et commodo a nulla diam.',
+        about: 'We lit up the stage with power-packed fireside chats featuring Ankur Warikoo, Dr. A. Velumani, and Pranjal Kamra, alongside a growing league of incredible sponsors. From MBA and finance deep-dives to high-energy games, pronites, and surprise events — this edition had it all. Horizon 2025 wasn’t just bigger, it was unforgettable!!',
         gallery: [
           'src/assets/images/events/EventArchive/img1.jpg',
           'src/assets/images/events/EventArchive/img2.jpg',
@@ -58,23 +58,11 @@ const events_data = {
        { id: 'keynote-23', name: 'Spring Keynote 2023', about: 'Kicking off the year with big announcements.', gallery: [], videoUrl: null },
     ]
   },
-    2022: {
-    title: 'Events 2022',
-    events: [
-       { id: 'product-reveal-22', name: 'Product Reveal 2022', about: 'Unveiling our latest product.', gallery: [], videoUrl: null },
-    ]
-  },
-    2021: {
-    title: 'Events 2021',
-    events: [
-       { id: 'community-meetup-21', name: 'Community Meetup', about: 'Our first community event.', gallery: [], videoUrl: null },
-    ]
-  },
 };
 
 
 
-const years = [2021, 2022, 2023, 2024, 2025];
+const years = [ 2023, 2024, 2025];
 
 const PlayIcon = () => (
   <svg className="w-16 h-16 text-white opacity-70 group-hover:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="currentColor">
