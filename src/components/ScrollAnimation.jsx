@@ -1,19 +1,23 @@
 import React from 'react';
+import img1 from '@/assets/images/events/ScrollAnimation/img1.png';
+import img2 from '@/assets/images/events/ScrollAnimation/img2.png';
+import img3 from '@/assets/images/events/ScrollAnimation/img3.png';
+import img4 from '@/assets/images/events/ScrollAnimation/img4.png';
+import img5 from '@/assets/images/events/ScrollAnimation/img5.png';
+import img6 from '@/assets/images/events/ScrollAnimation/img6.png';
 
 // Main App component
 const ScrollAnimation = () => {
-  // The URL of the uploaded image.
-  const uploadedImageUrl = 'src/assets/images/events/ScrollAnimation/img1.png';
 
   // Define the items for the carousel.
   // Each item can be either 'single' (one image) or 'stacked' (two images).
   // The heights are adjusted to make the overall visual height of each card consistent.
   const rawScrollItems = [
     // Stacked images example
-    { type: 'stacked', topImage: 'src/assets/images/events/ScrollAnimation/img1.png', bottomImage: 'src/assets/images/events/ScrollAnimation/img2.png' },
-    { type: 'single', image: 'src/assets/images/events/ScrollAnimation/img3.png' }, // Single image example
-    { type: 'stacked', topImage: 'src/assets/images/events/ScrollAnimation/img4.png', bottomImage: 'src/assets/images/events/ScrollAnimation/img5.png' },
-    { type: 'single', image: 'src/assets/images/events/ScrollAnimation/img6.png' },
+    { type: 'stacked', topImage: img1 , bottomImage: img2 },
+    { type: 'single', image: img3 }, // Single image example
+    { type: 'stacked', topImage: img4, bottomImage: img5 },
+    { type: 'single', image: img6 },
   ];
 
   // To make the scrolling seamless, we duplicate the items.

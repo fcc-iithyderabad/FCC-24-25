@@ -205,10 +205,13 @@ const HomeCarousel = () => {
         </div>
       </div>
     </div>
-        <button className="flex font-schibsted items-center py-10 gap-2 bg-[#CDFE64] hover:bg-blue-500 text-[#1F2E01] font-semibold font-roboto text-Body-2-fontSize px-6 py-3 rounded-md transition duration-300">
-          View All Events
-        <span className="text-[#1F2E01]">→</span>
-        </button>
+        <a href="/events">
+          <button className="flex font-schibsted items-center py-10 gap-2 bg-[#CDFE64] hover:bg-blue-500 text-[#1F2E01] font-semibold font-roboto text-Body-2-fontSize px-6 py-3 rounded-md transition duration-300">
+            View All Events
+          <span className="text-[#1F2E01]">→</span>
+          </button>
+        </a>
+        
     </div>
   );
 };
