@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Horizon from "./pages/Horizon";
-import Events from "./pages/Events"
 import Schedule from "./pages/Schedule";
 import AboutUs from "./pages/AboutUs";
 import Resources from "./pages/Resources";
@@ -28,13 +27,20 @@ import HdfcMerger from "./pages/HdfcMerger";
 
 function App() {
   // Items for Navbar
-const items = [
-  { label: "Home", href: "/" },
-  { label: "Events", href: "/events" },
-  { label: "Projects", href: "/projects" },
-  { label: "Blogs", href: "#" },
-  { label: "About Us", href: "/aboutus" },
-];
+  const items = [
+    { label: "Home", href: "/" },
+    { label: "Events", href: "#" },
+    { label: "Projects", href: "/projects" },
+    {
+      label: "Resources",
+      href: "/resources",
+      subItems: [
+        { label: "Resources", href: "/resources" },
+        { label: "Blogs", href: "#" },
+      ],
+    },
+    { label: "About Us", href: "/aboutus" },
+  ];
 
   return (
     <div className="relative bg-black overflow-x-hidden my-1 z-0">
@@ -53,13 +59,11 @@ const items = [
         {/* Pages routes */}
         <Route exact path="/" element={<Home />} />
         <Route path="/horizon" element={<Horizon />} />
-        <Route path="/horizon/schedule" element={<HorizonTimeline />} />
-        <Route path="/events" element={<Events />}/>
-        <Route path="/projects" element={<Projects/>}/>
+        <Route path="/projects" element={<Projects />} />
         <Route path="/projects/portfolio-optimizer" element={<PortfolioOptimizer />} />
         <Route path="/projects/sell-side-m-and-a" element={<SellSide />} />
         <Route path="/projects/trade-pro" element={<Tradepro />} />
-        <Route path="/projects/hdfc-merger" element={<HdfcMerger/>}/>
+        <Route path="/projects/hdfc-merger" element={<HdfcMerger />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/resources" element={<Resources />} />
@@ -69,7 +73,6 @@ const items = [
           element={<Consulting />}
         />
         <Route path="/resources/product-resources" element={<ProdMan />} />
-
         <Route path="/resources/newsletters" element={<Newsletters />} />
 
         <Route path="/horizon/schedule" element={<HorizonTimeline />} />

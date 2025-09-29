@@ -5,7 +5,6 @@ import { useState } from 'react';
 const UpcomingEvent = () => {
   // Array of background images for the hero section
   const images = [
-    "src/assets/images/events/img1.png",
     "src/assets/images/events/EventArchive/img5.jpg",
   ];
 
@@ -60,11 +59,10 @@ const UpcomingEvent = () => {
 
           {/* Main content */}
           <h1 className="text-[#EBEBEB] font-schibsted text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Lorem ipsum
+            HORIZON 2026
           </h1>
           <p className="text-[#BBBBBB] font-outfit text-lg md:text-xl max-w-xl mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet
-            lorem et commodo a nulla diam.
+            Get ready for Horizon 2026 — where the brightest minds in consulting, finance, and product management come together to shape the future.
           </p>
 
           {/* Location tag */}
@@ -82,7 +80,7 @@ const UpcomingEvent = () => {
                 clipRule="evenodd"
               />
             </svg>
-            <span className='text-xl font-schibsted '>Auditorium</span>
+            <span className='text-xl font-schibsted '>IIT Hyderabad</span>
           </div>
           {/* Navigation buttons */}
             <div className="flex justify-center w-full "> {/* Flex container to center the gray box */}

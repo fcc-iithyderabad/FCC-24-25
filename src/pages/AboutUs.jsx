@@ -154,18 +154,18 @@ function AboutUs() {
               id="Hero title"
               className="font-Family-primary font-semibold text-5xl md:text-6xl leading-tight tracking-normal"
             >
-              <span className="text-transparent bg-clip-text">
+              <span className="text-transparent p-7 bg-clip-text text-[50px]">
                 <TypingText
-                  text="We're More Than a Club"
+                  text="More than a club — we lead, inspire, and change the game."
                   duration={1.5}
                   cursor={false}
               
                 />
               </span>
 
-              <span className="text-transparent block bg-clip-text bg-gradient-to-r p-10 from-[#7fa4fa] via-[#7fa4fa] to-[#7fa4fa] font-schibsted">
+              <span className="text-transparent block bg-clip-text bg-gradient-to-r p-8 from-[#7fa4fa] via-[#7fa4fa] to-[#7fa4fa] font-schibsted text-[50px]">
                 <TypingText
-                  text="We're a Movement"
+                  text=""
                   delay={2.2}  // Slightly longer delay for natural pause
                   duration={1.2}
                   cursorBlink={false}  // Remove blinking after last line
@@ -180,7 +180,7 @@ function AboutUs() {
               transition={{ duration: 0.8, delay: 0.8 }}
             >
               <span className="text-transparent bg-clip-text bg-[var(--Website-Neutral-3,#BBBBBB)] font-outfit">
-                Founded by students, led with purpose. At FCC IIT Hyderabad, we're cultivating the next generation of financial leaders and consultants - through collaboration, action, and real-world impact.
+              Student-led, purpose-driven, and impact-focused—FCC IIT Hyderabad is where the future of finance, consulting, product management and quantitatvie finance is built.
               </span>
             </motion.div>
           </div>
@@ -190,7 +190,7 @@ function AboutUs() {
       {/* About/Vision/Mission Section */}
       <motion.div
         className="w-full max-w-[1006px] mx-auto px-4 py-16"
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
@@ -204,7 +204,7 @@ function AboutUs() {
         >
           {/* About Section */}
           <motion.div
-            className="flex flex-col items-center gap-4 md:w-1/3 text-center rounded-[10px] border border-[#5a5a5a] bg-[#1b1a1a] p-4 hover:border-[#A3ACD9] transition-all duration-100 hover:shadow-lg hover:shadow-[#4E56D3]/20"
+            className="flex flex-col items-center gap-10 md:w-1/3 text-center rounded-[10px] border border-[#5a5a5a] bg-[#1b1a1a] p-8 hover:border-[#A3ACD9] transition-all duration-100 hover:shadow-lg hover:shadow-[#4E56D3]/20"
             variants={itemVariants}
             whileHover={{ y: -5 }}
           >
@@ -212,7 +212,7 @@ function AboutUs() {
               About Us
             </h3>
             <p className="text-[#BBBBBB] font-outfit">
-              Founded by students, led with purpose. At FCC IIT Hyderabad, we're cultivating the next generation of financial leaders and consultants — through collaboration, action, and real-world impact.
+              Founded by students, led with purpose. At FCC IIT Hyderabad, we're cultivating the next generation of financial leaders, consultants ,product managers, and quantitative finance professionals— through collaboration, action, and real-world impact.
             </p>
           </motion.div>
 
@@ -233,7 +233,7 @@ function AboutUs() {
               Vision
             </h3>
             <p className="text-[#BBBBBB] font-outfit">
-              Lorem ipsum duis pellentesque amet ut imperdiet lorem et commodo a nulla diam.
+            The Finance and Consulting Club (FCC) envisions fostering a culture that empowers students to build careers in finance, consulting, product management and quantitative finance by effectively bridging the gap between academic learning and industry practices.
             </p>
           </motion.div>
 
@@ -254,8 +254,7 @@ function AboutUs() {
               Mission
             </h3>
             <p className="text-[#BBBBBB] font-outfit">
-              Lorem ipsum duis pellentesque amet ut imperdiet lorem et commodo a nulla diam.
-            </p>
+            We catalyze student-led learning in finance, consulting, product management and quantitative finance fostering curiosity, real-world thinking, continuous growth; building capability through competitions, projects, curated insights; connecting academia and industry via talks, mentorship, digital outreach.</p>
           </motion.div>
         </motion.div>
       </motion.div>
