@@ -11,8 +11,7 @@ const Collaborate = () => {
         </h2>
 
         <p className="max-w-3xl font-Body-3-fontFamily font-Weights-Medium text-Body-1-fontSize md:text-xl text-gray-300 mb-8">
-            Partner with FCC to unlock new opportunities, drive innovation, and shape the future of finance and consulting. 
-            Join our network of industry leaders and academic excellence.
+Partner with FCC to turn complex problems into shippable outcomes. We co-build with finance and consulting, product and quant-finance teams on data, AI, product, and strategy - fast, measurable, and production-minded.
         </p>
 
         <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold font-Body-3-fontFamily text-Body-2-fontSize px-6 py-3 rounded-md transition duration-300">

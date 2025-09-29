@@ -15,7 +15,6 @@ function PortfolioOptimizer() {
       {title: "Unified Multi-Constraint Frontier", desc: "Incorporating Multiple Portfolio Types into a Unified Efficient Frontier Combining portfolios with and without transaction costs, sector constraints, and different optimization goals into a single efficient frontier plot was complex. It required careful handling of optimization logic, consistent plotting mechanisms, and clear interpretation of diverse portfolio results."},
       {title: "Streamlit Backend Integration", desc: "Designing a clean and intuitive frontend using Streamlit while ensuring smooth integration with backend optimization functions was challenging. Managing interactivity, handling user inputs, and updating visuals dynamically demanded precise coordination between the interface and computational logic."}]}
       />
-      <Collaborate />
     </div>
   );
 }
