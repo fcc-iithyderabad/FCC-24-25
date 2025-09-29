@@ -5,7 +5,26 @@ import velumani2 from '@/assets/images/events/EventArchive/velumani2.jpg';
 import MBAS from '@/assets/images/events/EventArchive/MBAS.jpg';
 import MBAS2 from '@/assets/images/events/EventArchive/MBAS2.jpg';
 import breakingBrands from '@/assets/images/events/EventArchive/breakingBrands.jpg';
-import MDD from '@/assets/images/events/EventArchive/MDD.jpg'
+import MDD from '@/assets/images/events/EventArchive/MDD.jpg';
+
+import h_24_1 from '@/assets/images/events/horizon_24/1.png';
+import h_24_2 from '@/assets/images/events/horizon_24/2.png';
+import h_24_3 from '@/assets/images/events/horizon_24/3.png';
+import h_24_4 from '@/assets/images/events/horizon_24/4.png';
+import h_24_5 from '@/assets/images/events/horizon_24/5.png';
+
+import arjun from '@/assets/images/events/horizon_24/arjun_inv.png';
+import aswini from '@/assets/images/events/horizon_24/aswini_inv.png';
+import maria from '@/assets/images/events/horizon_24/maria_inv.png';
+import mohit from '@/assets/images/events/horizon_24/mohit_inv.png';
+import pratik from '@/assets/images/events/horizon_24/pratik_inv.png';
+
+import h_23_1 from '@/assets/images/events/horizon_23/1.png';
+import h_23_2 from '@/assets/images/events/horizon_23/2.png';
+import h_23_3 from '@/assets/images/events/horizon_23/3.png';
+import h_23_4 from '@/assets/images/events/horizon_23/4.png';
+import h_23_5 from '@/assets/images/events/horizon_23/5.png';
+import h_23_6 from '@/assets/images/events/horizon_23/6.png';
 
 import img5 from '@/assets/images/events/EventArchive/img5.jpg';
 
@@ -31,8 +50,9 @@ const eventsData = {
         id: 'first-speaker',
         name: 'Horizon 2024',
         about: 'We pushed boundaries with the intense ProdX case study competition, strategic M&A challenges, and the ultimate Trade Quests — all backed by attractive cash prizes. Industry leaders like Abhishek Kar, Arjun Beri, and Ashwini Bajaj inspired us, alongside renowned companies proudly sponsoring the event. Horizon 2024 took everything to the next level, raising the bar like never before.',
-        // gallery: [warikoo1, warikoo2, velumani1, velumani2, MBAS, MBAS2,breakingBrands, MDD],
-        // videoUrl: img5,
+        gallery: [arjun , aswini, maria, mohit, pratik , h_24_1, h_24_2, h_24_3, h_24_4, h_24_5],
+        // videoUrl: h_24_1,
+
       },
       // ... rest of events
     ],
@@ -44,7 +64,7 @@ const eventsData = {
         id: 'first-speaker',
         name: 'Horizon 2023',
         about: 'We ignited innovation with thrilling cash prize challenges, game-changing collaborations, and fierce equity competitions. Visionary leaders like Rishabh Jain, Akhil Sharma, Subba Perepa, and Gaurav Mahindra delivered powerful insights, while our seniors offered priceless mentorship. Horizon 2023 wasn’t just an event — it was an unforgettable movement.',
-        // gallery: [warikoo1, warikoo2, velumani1, velumani2, MBAS, MBAS2,breakingBrands, MDD],
+        gallery: [h_23_1, h_23_2, h_23_3, h_23_4, h_23_5],
         // videoUrl: img5,
       },
       // ... rest of events
