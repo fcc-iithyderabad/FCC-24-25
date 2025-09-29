@@ -25,7 +25,6 @@ The project combined qualitative storytelling with quantitative modeling to buil
       {title: "Portfolio Performance Calculation", desc: "Calculating profit and loss for stocks in different currencies was tricky. Changes in exchange rates made it hard to show accurate results in one currency. I had to include extra steps to convert values properly and make sure the performance shown was correct and consistent.Dashboard Responsiveness"},
       {title: "Dashboard optimization", desc: "The trading dashboard became slow when displaying several charts and indicators at the same time. This made it harder to quickly check market trends, especially during testing. I had to work on improving performance to make the dashboard run more smoothly and respond faster."}]}
             ></ProjectDetails>
-            <Collaborate></Collaborate>
         </div>
     );
 }

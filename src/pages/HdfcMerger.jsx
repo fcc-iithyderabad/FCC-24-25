@@ -80,8 +80,8 @@ const HdfcMerger = () => {
 
                 {/* Overview */}
                 <div id="project overviw" className="flex flex-col gap-4 sm:gap-[32px]">
-                    <p className="text-[#EBEBEB] font-Family-primary text-[40px] font-Weights-Bold">Overview</p>
-                    <p className="font-Family-secondary text-base text-[22px] leading-relaxed sm:leading-[32px] font-light">{overview}</p>
+                    <p className="text-[#EBEBEB] font-Family-primary text-xl sm:text-Title-Title-3-fontSize font-Weights-Bold">Overview</p>
+                    <p className="font-Family-secondary text-base text-[20px] leading-relaxed sm:leading-[32px] font-light">{overview}</p>
                 </div>
                 {/* Responsive Image */}
                 <div className="flex gap-1 items-center justify-center">
@@ -90,7 +90,7 @@ const HdfcMerger = () => {
                     <div className="flex flex-col gap-2">
 
                         <h1 className="text-[40px] font-bold font-Family-primary ">Why I chose This Project</h1>
-                        <p className="text-[22px] font-Family-secondary ">Mergers and acquisitions are not only financial transactions but also strategic moves that reshape
+                        <p className="text-base text-[20px] font-Family-secondary ">Mergers and acquisitions are not only financial transactions but also strategic moves that reshape
                             industries. The HDFC merger was particularly interesting because it was a reverse merger, different
                             from the conventional cases where larger banks absorb smaller financial institutions. It was a
                             strategic, mutual decision, not one forced by financial distress. That made it an ideal case to study
@@ -101,7 +101,7 @@ const HdfcMerger = () => {
                 <div id="key challenges container" className="flex flex-col gap-4 sm:gap-[32px]">
                     <div className="h-full flex flex-col gap-2 sm:gap-[32px]">
                         <p className="text-[#EBEBEB] font-Family-primary text-[40px] font-Weights-Bold">What Project Covers</p>
-                        <p className="font-Family-secondary text-base text-[24px] leading-relaxed sm:leading-[32px] font-light">
+                        <p className="font-Family-secondary text-base text-[20px] leading-relaxed sm:leading-[32px] font-light">
                             These are some of the key concepts this project covers
                         </p>
                     </div>
