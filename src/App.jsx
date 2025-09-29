@@ -9,6 +9,9 @@ import Finance from "./pages/resources-pages/Finance";
 import Consulting from "./pages/resources-pages/Consulting";
 import ProdMan from "./pages/resources-pages/ProdMan";
 import Projects from "./pages/Projects";
+import PortfolioOptimizer from "./pages/PortfolioOptimizer";
+import SellSide from "./pages/SellSide_m_and_a";
+import Tradepro from "./pages/Tradepro";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -20,22 +23,24 @@ import rupeeBlur from "/src/assets/home/rupeeblur.svg";
 import BackToTop from "./components/BackToTop";
 import HorizonTimeline from "./components/horizon/HorizonTimeline";
 import HorizonPartners from "./components/horizon/HorizonPartners";
+import HdfcMerger from "./pages/HdfcMerger";
 
 function App() {
   // Items for Navbar
-const items = [
-  { label: "Home", href: "/" },
-  { label: "Events", href: "#" },
-  { label: "Projects", href: "/projects" },
-  { 
-    label: "Resources",
-    href: "/resources",
-    subItems: [
-      { label: "Resources", href: "/resources" },
-      { label: "Blogs", href: "#" },
-    ]
-  },  { label: "About Us", href: "/aboutus" },
-];
+  const items = [
+    { label: "Home", href: "/" },
+    { label: "Events", href: "#" },
+    { label: "Projects", href: "/projects" },
+    {
+      label: "Resources",
+      href: "/resources",
+      subItems: [
+        { label: "Resources", href: "/resources" },
+        { label: "Blogs", href: "#" },
+      ],
+    },
+    { label: "About Us", href: "/aboutus" },
+  ];
 
   return (
     <div className="relative bg-black overflow-x-hidden my-1 z-0">
@@ -54,8 +59,11 @@ const items = [
         {/* Pages routes */}
         <Route exact path="/" element={<Home />} />
         <Route path="/horizon" element={<Horizon />} />
-        <Route path="/horizon/schedule" element={<HorizonTimeline />} />
-        <Route path="/projects" element={<Projects/>}/>
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/portfolio-optimizer" element={<PortfolioOptimizer />} />
+        <Route path="/projects/sell-side-m-and-a" element={<SellSide />} />
+        <Route path="/projects/trade-pro" element={<Tradepro />} />
+        <Route path="/projects/hdfc-merger" element={<HdfcMerger />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/resources" element={<Resources />} />
@@ -65,7 +73,6 @@ const items = [
           element={<Consulting />}
         />
         <Route path="/resources/product-resources" element={<ProdMan />} />
-
         <Route path="/resources/newsletters" element={<Newsletters />} />
 
         <Route path="/horizon/schedule" element={<HorizonTimeline />} />
