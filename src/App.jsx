@@ -30,7 +30,7 @@ function App() {
   // Items for Navbar
   const items = [
     { label: "Home", href: "/" },
-    { label: "Events", href: "#" },
+    { label: "Events", href: "/events" },
     { label: "Projects", href: "/projects" },
     {
       label: "Resources",
