@@ -69,7 +69,7 @@ const ArticleCardLandscape = ({ article }) => {
 
                     {/* Read More Link */}
                     <a
-                        href="#"
+                        href={article.link}
                         className="inline-flex items-center gap-2 text-[#CDFE64] hover:text-green-400 font-semibold transition-colors duration-200"
                     >
                         Read More
