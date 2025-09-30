@@ -25,7 +25,7 @@ const HorizonCard = () => {
             </button>
          </a>
 
-         <a href="https://docs.google.com/forms/d/e/1FAIpQLSenJwxBi-J-mezk0VzxTK9rvqvs8CibygyBa4YutgJbv3rJqA/viewform">
+         <a href="https://forms.gle/PEX5gmGV9DBhx1UT7">
             <button className="flex items-center gap-2 bg-[#CDFE64] text-[#1F2E01] hover:bg-blue-500 font-semibold font-outfit text-Body-2-fontSize px-6 py-3 rounded-md">
                 Register
             </button>
