@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Events from './pages/Events';
 import Horizon from "./pages/Horizon";
 import Schedule from "./pages/Schedule";
 import AboutUs from "./pages/AboutUs";
@@ -58,6 +59,7 @@ function App() {
       <Routes>
         {/* Pages routes */}
         <Route exact path="/" element={<Home />} />
+        <Route path="/events" element={<Events />}/>
         <Route path="/horizon" element={<Horizon />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/portfolio-optimizer" element={<PortfolioOptimizer />} />
