@@ -123,7 +123,7 @@ const HomeCarousel = () => {
   const CarouselCard = ({ item, innerRef }) => (
     <div
       ref={innerRef} // Attach this ref only to the first item for width measurement.
-      className="flex-shrink-0 w-96 bg-gray-800 rounded-xl shadow-lg p-1 border border-gray-700 font-schibsted"
+      className="flex-shrink-0 w-72 sm:w-80 md:w-96 bg-gray-800 rounded-xl shadow-lg p-1 border border-gray-700 font-schibsted"
     >
       {/* Image section */}
       <div className="relative rounded-lg overflow-hidden h-48 mb-4">
@@ -168,53 +168,56 @@ const HomeCarousel = () => {
   );
 
   return (
-    <div className="flex h-[80vh] md:h-auto flex-col w-full justify-center items-center md:py-[5%] z-20">
+    <div className="flex min-h-[80vh] md:min-h-0 flex-col w-full justify-center md:items-center md:py-[5%] z-20">
 
-    <div className="flex items-center justify-center py-6 px-4 sm:px-6 lg:px-8 font-inter">
-      <div className="flex flex-col relative w-full max-w-7xl mx-auto overflow-hidden">
-        {/* Main carousel track container */}
-        <div
-          id="Section title"
-          class="text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
+      <div className="flex items-center justify-center py-6 px-4 sm:px-6 lg:px-8 font-inter">
+        <div className="flex flex-col relative w-full max-w-7xl mx-auto overflow-hidden">
+
+          {/* Section title */}
+          <div
+            id="Section title"
+            className="text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-3"
           >
-          <span
-            class="bg-gradient-to-r text-schibsted text-5xl from-[#4E56D3] via-[#A3ACD9] to-[#F3FFD8] bg-clip-text text-transparent"
-            >Glimpses of Excellence</span>
-        </div>
-        <div
-          id="Section subtitle"
-          class="mt-4 text-center font-normal text-base sm:text-lg mb-[3%] md:text-2xl leading-relaxed max-w-3xl mx-auto"
+            <span className="bg-gradient-to-r text-schibsted text-2xl sm:text-3xl md:text-5xl from-[#4E56D3] via-[#A3ACD9] to-[#F3FFD8] bg-clip-text text-transparent">
+              Glimpses of Excellence
+            </span>
+          </div>
+
+          {/* Section subtitle */}
+          <div
+            id="Section subtitle"
+            className="mt-4 text-center font-normal text-sm sm:text-base md:text-lg lg:text-2xl leading-relaxed max-w-full sm:max-w-2xl md:max-w-3xl mx-auto px-4 md:px-6 mb-8 break-words whitespace-normal overflow-hidden"
           >
-          <span class="text-white font-Family-secondary "
-            >Explore our journey through events, insights, projects, and the brilliant minds that make FCC a thriving community.</span>
-        </div>
-        <div
-          ref={carouselTrackRef}
-          className="flex gap-x-6 transition-transform duration-500 ease-in-out"
-          // Inline style for dynamic `translateX` based on `currentIndex` and `itemWidth`.
-          style={{ transform: `translateX(-${currentIndex * itemWidth}px)` }}
-        >
-          {/* Render all duplicated items */}
-          {duplicatedItems.map((item, index) => (
-            <CarouselCard
-              key={`${item.id}-${index}`} // Unique key for each duplicated item
-              item={item}
-              // Only pass `itemRef` to the very first item (index 0) for measurement.
-              // This ensures `itemWidth` is calculated correctly only once from a representative item.
-              innerRef={index === 0 ? itemRef : null}
-            />
-            
-          ))}
+            <span className="text-white font-Family-secondary">
+              Explore our journey through events, insights, projects, and the brilliant minds that make FCC a thriving community.
+            </span>
+          </div>
+
+          {/* Carousel cards */}
+          <div
+            ref={carouselTrackRef}
+            className="flex gap-x-4 sm:gap-x-6 mb-10 transition-transform duration-500 ease-in-out"
+            style={{ transform: `translateX(-${currentIndex * itemWidth}px)` }}
+          >
+            {duplicatedItems.map((item, index) => (
+              <CarouselCard
+                key={`${item.id}-${index}`}
+                item={item}
+                innerRef={index === 0 ? itemRef : null}
+              />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-        <a href="/events">
-          <button className="flex font-schibsted items-center py-10 gap-2 bg-[#CDFE64] hover:bg-blue-500 text-[#1F2E01] font-semibold font-roboto text-Body-2-fontSize px-6 py-3 rounded-md transition duration-400">
-            View All Events
+
+      {/* View all events button */}
+      <a href="/events" className="flex justify-center mt-6">
+        <button className="flex font-schibsted items-center gap-2 bg-[#CDFE64] hover:bg-blue-500 text-[#1F2E01] font-semibold font-roboto text-Body-2-fontSize px-6 py-3 rounded-md transition duration-400">
+          View All Events
           <span className="text-[#1F2E01]">→</span>
-          </button>
-        </a>
-        
+        </button>
+      </a>
+
     </div>
   );
 };

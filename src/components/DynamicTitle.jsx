@@ -98,7 +98,7 @@ const DynamicTitle = () => {
       {/* Container for the text content, centered */}
       <div className="text-center">
         {/* First line: "Learn,Build,Excel in" */}
-        <h1 className={`gap-x-3 text-left text-4xl md:text-5xl font-schibsted font-bold bg-gradient-to-r from-[#6B72DA] to-[#F3FFD8] bg-clip-text text-transparent overflow-hidden whitespace-nowrap mb-2.5
+        <h1 className={`gap-x-3 text-left text-4xl md:text-5xl font-schibsted font-bold bg-gradient-to-r from-[#6B72DA] to-[#F3FFD8] bg-clip-text text-transparent overflow-hidden mb-2.5
                         ${showFirstLine ? 'animate-revealRightToLeft' : 'opacity-0'}`}>
           Learn. Build. Excel in
         </h1>
@@ -111,7 +111,7 @@ const DynamicTitle = () => {
               // Use the index as a key to force React to re-render the span when the word changes,
               // which re-triggers the fadeInUp animation for the new word.
               key={currentSecondLineWordIndex}
-              className="gap-x-3 text-4xl md:text-5xl font-schibsted bg-gradient-to-r from-[#6B72DA] to-[#F3FFD8] bg-clip-text text-transparent inline-block animate-revealRightToLeft mb-5 sm:mx-3 py-1"
+              className="gap-x-3 text-4xl md:text-5xl font-schibsted bg-gradient-to-r from-[#6B72DA] to-[#F3FFD8] bg-clip-text text-transparent inline-block animate-revealRightToLeft mb-5"
             >
               {wordsForSecondLine[currentSecondLineWordIndex]}
             </span>
