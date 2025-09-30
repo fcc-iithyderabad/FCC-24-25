@@ -1,32 +1,35 @@
 import React, { useState, useEffect, useRef } from 'react';
+import img1 from "../../assets/images/events/EventArchive/warikoo1.jpg"
+import img2 from "../../assets/images/events/EventArchive/velumani1.jpg"
+import img3 from "../../assets/images/events/horizon_24/2.png"
 
 // Data for carousel items - You can replace these with your actual data
 const items = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?crop=entropy&cs=srgb&fm=jpg&ixid=M3w0MjA4MDF8MHwxfHNlYXJjaHw0fHxBY2Nlc3MlMjBDb250cm9sJTIwTGlzdHMlMkMlMjBJUHY0JTIwbmV0d29ya2luZyUyQyUyMHBhY2tldCUyMGZpbHRlcmluZ3xlbnwxfDB8fHwxNzI4NTQxNTcyfDA&ixlib=rb-4.0.3&q=85&w=1000&fit=crop&h=340&q=75&fm=webp',
-    date: 'Mar 2024',
-    title: 'Horizon 2024',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    attendees: '250 Attendees',
-    location: 'Auditorium'
+    image: img1,
+    date: 'Jan 2025',
+    title: 'Horizon 2025',
+    description: 'Ankur Warikoo inspired students at FCC Horizon 2025 with practical insights on entrepreneurship, productivity, and personal growth.',
+    attendees: '1000 Attendees',
+    location: 'LHC-5'
   },
   {
     id: 2,
-    image: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTE9lKVZ8MIL2A-WkG-6jN2bP3um1VMY78h0MS7-gJTI0qowWAP',
-    date: 'Mar 2024',
-    title: 'Horizon 2024',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
-    attendees: '250 Attendees',
-    location: 'Auditorium'
+    image: img2,
+    date: 'Feb 2025',
+    title: 'Horizon 2025',
+    description: 'Mr. A. Velumani, founder of Thyrocare, shared his journey of building a successful healthcare enterprise at FCC Horizon 2025.',
+    attendees: '800 Attendees',
+    location: 'LHC-5'
   },
   {
     id: 3,
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlvTFkQawR6ZQXtUaDNmNZy0fkS8iKtFjazrnRVGfmAOZZvcA5',
-    date: 'Mar 2024',
+    image: img3,
+    date: 'Feb 2024',
     title: 'Horizon 2024',
-    description: 'Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.',
-    attendees: '250 Attendees',
+    description: 'Horizon 2024 brought together industry leaders and innovators, featuring Aswini Bajaj, Arjun Beri, and Maria Deepika.',
+    attendees: '700 Attendees',
     location: 'Auditorium'
   },
   
@@ -206,7 +209,7 @@ const HomeCarousel = () => {
       </div>
     </div>
         <a href="/events">
-          <button className="flex font-schibsted items-center py-10 gap-2 bg-[#CDFE64] hover:bg-blue-500 text-[#1F2E01] font-semibold font-roboto text-Body-2-fontSize px-6 py-3 rounded-md transition duration-300">
+          <button className="flex font-schibsted items-center py-10 gap-2 bg-[#CDFE64] hover:bg-blue-500 text-[#1F2E01] font-semibold font-roboto text-Body-2-fontSize px-6 py-3 rounded-md transition duration-400">
             View All Events
           <span className="text-[#1F2E01]">→</span>
           </button>

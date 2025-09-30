@@ -67,7 +67,7 @@ const ArticleCardVertical = ({ article }) => {
 
         {/* Read More Link */}
         <a
-          href="#"
+          href={article.link}
           className="inline-flex items-center gap-2 font-schibsted text-[#CDFE64] hover:text-green-400 font-semibold transition-colors duration-200 py-4"
         >
           Read More 
