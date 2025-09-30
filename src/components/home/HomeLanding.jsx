@@ -6,7 +6,7 @@ import DynamicTitle from "../DynamicTitle";
 
 const HomeLanding = () => {
     return (
-        <div className="flex h-[80vh] md:h-auto mb-[2%] md:flex-row flex-col w-full justify-center items-center md:py-[5%] z-20">
+        <div className="flex min-h-[80vh] md:min-h-0 pt-[80px] mb-[2%] md:flex-row flex-col w-full justify-center items-center md:py-[5%] z-20">
             {/* Main content wrapper: Centers content block, adds mobile padding */}
             {/* <DynamicTitle /> */}
             <div className="flex flex-col md:flex-row w-full justify-center items-center max-w-[1200px] px-4 md:px-10">
